@@ -1,0 +1,122 @@
+.hero_frame{
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 115px;
+  .hero_frame_content{
+    max-width: 510px;
+    h1{
+      font-family: $work_sans_font;
+      font-weight: 600;
+      font-size: 67px;
+      line-height: 110%;
+      text-transform: capitalize;
+      margin-bottom: 20px;
+    }
+    .banner_txt{
+      display: block;
+      font-family: $work_sans_font;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 160%;
+      text-transform: capitalize;
+      margin-bottom: 30px;
+    }
+    .get_started_btn{
+      border-radius: 20px;
+      padding: 19px 50px;
+      background: $main_color;
+      margin-bottom: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $work_sans_font;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+      &:before{
+        background-image: url("../images/banner/rocketLaunch.svg");
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+        content: "";
+        margin-right: 12px;
+      }
+      &:hover{
+        font-weight: 700;
+        background-color: $btn_hover;
+        transform: scale(1.05);
+        box-shadow: $shadow;
+      }
+    }
+    .info{
+      display: flex;
+      .info_block{
+        display: flex;
+        flex-direction: column;
+        min-width: 150px;
+        .number{
+          font-family: $space_mono_font;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 140%;
+          text-transform: capitalize;
+        }
+        .description{
+          font-family: $work_sans_font;
+          font-weight: 400;
+          font-size: 23px;
+          line-height: 160%;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .hero_frame_artist_card{
+    border-radius: 20px;
+    background-color: $background_secondary;
+    max-width: 510px;
+    max-height: 510px;
+    overflow: hidden;
+    .banner_img{
+      max-width: 510px;
+      max-height: 401px;
+    }
+    .artist{
+      padding: 22px 20px;
+      .collection_name{
+        display: block;
+        font-family: $work_sans_font;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      .artist_username{
+        font-family: $work_sans_font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:before{
+          background-image: url("../images/banner/avatar.svg");
+          display: inline-flex;
+          width: 24px;
+          height: 24px;
+          content: "";
+          margin-right: 12px;
+        }
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+

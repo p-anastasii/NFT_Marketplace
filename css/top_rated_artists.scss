@@ -1,0 +1,148 @@
+.top_creators{
+  padding: 80px 115px;
+  display: block;
+  .headline_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    .headline{
+      h3{
+        font-family: $work_sans_font;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 120%;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+      p{
+        font-family: $work_sans_font;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        text-transform: capitalize;
+      }
+    }
+    .view_rankings_btn{
+      border-radius: 20px;
+      border: 2px solid $main_color;
+      padding: 19px 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $work_sans_font;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+      &:before{
+        background-image: url("../images/top_rated_artists/rocket.svg");
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        content: "";
+        margin-right: 12px;
+      }
+      &:hover{
+        font-weight: 700;
+        background-color: $btn_hover;
+        transform: scale(1.05);
+        box-shadow: $shadow;
+        &:before{
+          background-image: url("../images/top_rated_artists/rocket_hover.svg");
+        }
+      }
+    }
+  }
+  .artist_card_grid{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .artist_card_content{
+      border-radius: 20px;
+      padding: 20px;
+      width: 240px;
+      height: 240px;
+      background: $background_secondary;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      .card_number{
+        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+        background: $background_color;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+          font-family: $work_sans_font;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: center;
+        }
+      }
+      .card_image{
+        img{
+          width: 120px;
+          height: 120px;
+          margin-bottom: 20px;
+        }
+      }
+      .artist_username{
+        span{
+          font-family: $work_sans_font;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 140%;
+          text-transform: capitalize;
+          text-align: center;
+          margin-bottom: 5px;
+        }
+      }
+      .additional_info{
+        .total_sales{
+          font-family: $work_sans_font;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: right;
+          color: $caption_label_text;
+          margin-bottom: 5px;
+          margin-right: 10px;
+        }
+        .total_sales_info{
+          font-family: "Space Mono", monospace;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+        }
+      }
+      &:hover{
+        transform: scale(1.05);
+        box-shadow: $shadow;
+        background: #484848;
+        .artist_username{
+          span{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .artist_card:nth-child(9),
+    .artist_card:nth-child(10),
+    .artist_card:nth-child(11),
+    .artist_card:nth-child(12) {
+      .artist_card_content {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

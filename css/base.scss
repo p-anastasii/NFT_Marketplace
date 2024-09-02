@@ -1,0 +1,30 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2B2B2B;
+  color: white;
+}
+
+.container{
+  max-width: 1310px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+a{
+  cursor: pointer;
+}
+
+$space_mono_font: "Space Mono", monospace;
+$work_sans_font: "Work Sans", sans-serif;
+$main_color: #A259FF;
+$background_color: #2B2B2B;
+$btn_hover: #8d36f3;
+$background_secondary: #3B3B3B;
+$caption_label_text: #858584;
+$shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

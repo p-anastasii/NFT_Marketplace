@@ -1,0 +1,89 @@
+.subscribe{
+  margin: 40px 115px 80px;
+  border-radius: 20px;
+  padding: 60px;
+  background: $background_secondary;
+  max-width: 1050px;
+  max-height: 430px;
+  display: flex;
+  justify-content: space-between;
+  .subscribe_image{
+    border-radius: 20px;
+    width: 425px;
+    height: 310px;
+    overflow: hidden;
+    margin-right: 80px;
+    img{
+      width: 100%;
+      border-radius: inherit;
+    }
+  }
+  .subscribe_info{
+    h3{
+      font-family: $work_sans_font;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 120%;
+      text-transform: capitalize;
+      margin-bottom: 10px;
+    }
+    p{
+      font-family: $work_sans_font;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 160%;
+      text-transform: capitalize;
+      margin-bottom: 40px;
+    }
+    .subscribe_form{
+      display: flex;
+      position: relative;
+      align-items: center;
+      width: 425px;
+      height: 60px;
+      #subscribe_email{
+        background: #FFFFFF;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 19px 20px;
+        width: 100%;
+        height: 100%;
+        font-family: $work_sans_font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: $background_color;
+      }
+      .subscribe_btn{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        border-radius: 20px;
+        border-color: $main_color;
+        padding: 20px 50px;
+        width: 211px;
+        height: 100%;
+        background: $main_color;
+        font-family: $work_sans_font;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        cursor: pointer;
+        &:before{
+          background-image: url("../images/subscribe_widget/envelope.svg");
+          display: inline-flex;
+          width: 20px;
+          height: 20px;
+          margin-right: 12px;
+          content: "";
+        }
+        &:hover{
+          background: $btn_hover;
+        }
+      }
+    }
+  }
+}

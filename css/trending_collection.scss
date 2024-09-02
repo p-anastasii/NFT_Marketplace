@@ -1,0 +1,136 @@
+.card_collections{
+  padding: 80px 115px;
+  display: block;
+  h3{
+    font-family: $work_sans_font;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+  }
+  p{
+    font-family: $work_sans_font;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+  }
+  .collection_card_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .collection_card{
+      max-width: 330px;
+      .primary_photo{
+        border-radius: 20px;
+        max-width: 330px;
+        max-height: 330px;
+        overflow: hidden;
+        margin-bottom: 15px;
+        img{
+          width: 100%;
+        }
+        &:hover{
+          transform: scale(1.01);
+          box-shadow: $shadow;
+        }
+      }
+      .secondary_photo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+        .photo{
+          border-radius: 20px;
+          width: 100px;
+          height: 100px;
+          overflow: hidden;
+          img{
+            width: 100%;
+          }
+          &:hover{
+            transform: scale(1.02);
+            box-shadow: $shadow;
+          }
+        }
+        .number_of_NFTs{
+          border-radius: 20px;
+          padding: 32px 15px;
+          width: 100px;
+          height: 100px;
+          background-color: $main_color;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "Space Mono", monospace;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 160%;
+          text-transform: capitalize;
+          &:hover{
+            font-weight: 800;
+            background-color: $btn_hover;
+            transform: scale(1.02);
+            box-shadow: $shadow;
+          }
+        }
+      }
+      .collection_info{
+        display: flex;
+        flex-direction: column;
+        .collection_name{
+          font-family: $work_sans_font;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 140%;
+          text-transform: capitalize;
+          margin-bottom: 10px;
+        }
+        .artist_username{
+          font-family: $work_sans_font;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          display: flex;
+          align-items: center;
+          &.card1{
+            &:before{
+              background-image: url("../images/trending_collection/collection_1/avatar.svg");
+              width: 24px;
+              height: 24px;
+              display: inline-block;
+              content: "";
+              margin-right: 12px;
+            }
+          }
+          &.card2{
+            &:before{
+              background-image: url("../images/trending_collection/collection_2/avatar.svg");
+              width: 24px;
+              height: 24px;
+              display: inline-block;
+              content: "";
+              margin-right: 12px;
+            }
+          }
+          &.card3{
+            &:before{
+              background-image: url("../images/trending_collection/collection_3/avatar.svg");
+              width: 24px;
+              height: 24px;
+              display: inline-block;
+              content: "";
+              margin-right: 12px;
+            }
+          }
+          &:hover{
+            text-decoration-line: underline;
+          }
+        }
+      }
+    }
+  }
+}

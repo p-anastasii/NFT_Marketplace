@@ -1,0 +1,188 @@
+.discover_NFTs{
+  padding: 80px 115px;
+  display: block;
+  .headline_block{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    .headline{
+      h3{
+        font-family: $work_sans_font;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 120%;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+      }
+      span{
+        font-family: $work_sans_font;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        text-transform: capitalize;
+      }
+    }
+    .see_all{
+      border-radius: 20px;
+      border: 2px solid $main_color;
+      padding: 19px 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: $work_sans_font;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+      &:before{
+        background-image: url("../images/discover_nfts/icons/eye.svg");
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        content: "";
+        margin-right: 12px;
+      }
+      &:hover{
+        font-weight: 700;
+        background-color: $btn_hover;
+        transform: scale(1.05);
+        box-shadow: $shadow;
+        &:before{
+          background-image: url("../images/discover_nfts/icons/eye_hover.svg");
+        }
+      }
+    }
+  }
+  .nft_cards_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nft_card{
+      width: 330px;
+      min-height: 469px;
+      background: $background_secondary;
+      border-radius: 20px;
+      overflow: hidden;
+      &:hover{
+        transform: scale(1.01);
+        box-shadow: $shadow;
+      }
+    }
+    .nft_card_info{
+      padding: 20px 30px 25px;
+      .nft_card_name{
+        display: block;
+        font-family: $work_sans_font;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: capitalize;
+        margin-bottom: 5px;
+      }
+      .artist_username{
+        font-family: "Space Mono", monospace;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 27px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:before{
+          width: 24px;
+          height: 24px;
+          margin-right: 12px;
+          display: inline-flex;
+          content: "";
+        }
+        &:hover{
+            text-decoration: underline;
+        }
+      }
+      .moondancer{
+        &:before{
+          background-image: url("../images/discover_nfts/icons/moonDancer.png");
+        }
+      }
+      .nebulakid{
+        &:before{
+          background-image: url("../images/discover_nfts/icons/nebulaKid.png");
+        }
+      }
+      .spaceone{
+        &:before{
+          background-image: url("../images/discover_nfts/icons/spaceone.png");
+        }
+      }
+      .catch22{
+        &:before{
+          background-image: url("../images/discover_nfts/icons/catch22.png");
+        }
+      }
+      .puppypower{
+        &:before{
+          background-image: url("../images/discover_nfts/icons/puppyPower.png");
+        }
+      }
+      .bekind2robots{
+        &:before{
+          background-image: url("../images/discover_nfts/icons/beKind2Robots.png");
+        }
+      }
+      .nft_card_additional_info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price,
+        .highest_bid{
+          .info_title{
+            display: block;
+            font-family: "Space Mono", monospace;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 110%;
+            color: $caption_label_text;
+            margin-bottom: 8px;
+          }
+          .info{
+            font-family: "Space Mono", monospace;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+          }
+        }
+      }
+    }
+  }
+  .owl-carousel{
+    .owl-nav{
+      .owl-prev{
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background-image: url("../images/discover_nfts/icons/narrow_left.svg");
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        left: -50px;
+        top: 220px;
+      }
+      .owl-next{
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        background-image: url("../images/discover_nfts/icons/narrow_right.svg");
+        content: "";
+        position: absolute;
+        background-repeat: no-repeat;
+        right: -50px;
+        top: 220px;
+      }
+    }
+    .owl-item{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

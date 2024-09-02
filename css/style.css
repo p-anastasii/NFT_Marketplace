@@ -1,0 +1,1016 @@
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert; }
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol, ul {
+  list-style: none; }
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%; }
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse; }
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #2B2B2B;
+  color: white; }
+
+.container {
+  max-width: 1310px;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+a {
+  cursor: pointer; }
+
+.nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.nav_logo {
+  margin-left: 50px; }
+
+.nav_navmenu {
+  display: flex;
+  align-items: center; }
+  .nav_navmenu .navigation ul {
+    display: flex; }
+    .nav_navmenu .navigation ul li {
+      margin-right: 10px; }
+      .nav_navmenu .navigation ul li a {
+        padding: 12px 20px;
+        display: inline-block;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center; }
+        .nav_navmenu .navigation ul li a:hover {
+          color: #A259FF;
+          font-weight: 700; }
+  .nav_navmenu .singup_btn {
+    border-radius: 20px;
+    padding: 19px 30px;
+    background-color: #A259FF;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center; }
+    .nav_navmenu .singup_btn:before {
+      background-image: url("../images/nav/user.svg");
+      display: inline-flex;
+      width: 20px;
+      height: 20px;
+      content: "";
+      margin-right: 12px; }
+    .nav_navmenu .singup_btn:hover {
+      font-weight: 700;
+      background-color: #8d36f3;
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+
+.hero_frame {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 115px; }
+  .hero_frame .hero_frame_content {
+    max-width: 510px; }
+    .hero_frame .hero_frame_content h1 {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 67px;
+      line-height: 110%;
+      text-transform: capitalize;
+      margin-bottom: 20px; }
+    .hero_frame .hero_frame_content .banner_txt {
+      display: block;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 160%;
+      text-transform: capitalize;
+      margin-bottom: 30px; }
+    .hero_frame .hero_frame_content .get_started_btn {
+      border-radius: 20px;
+      padding: 19px 50px;
+      background: #A259FF;
+      margin-bottom: 30px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center; }
+      .hero_frame .hero_frame_content .get_started_btn:before {
+        background-image: url("../images/banner/rocketLaunch.svg");
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+        content: "";
+        margin-right: 12px; }
+      .hero_frame .hero_frame_content .get_started_btn:hover {
+        font-weight: 700;
+        background-color: #8d36f3;
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+    .hero_frame .hero_frame_content .info {
+      display: flex; }
+      .hero_frame .hero_frame_content .info .info_block {
+        display: flex;
+        flex-direction: column;
+        min-width: 150px; }
+        .hero_frame .hero_frame_content .info .info_block .number {
+          font-family: "Space Mono", monospace;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 140%;
+          text-transform: capitalize; }
+        .hero_frame .hero_frame_content .info .info_block .description {
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400;
+          font-size: 23px;
+          line-height: 160%;
+          text-transform: capitalize; }
+  .hero_frame .hero_frame_artist_card {
+    border-radius: 20px;
+    background-color: #3B3B3B;
+    max-width: 510px;
+    max-height: 510px;
+    overflow: hidden; }
+    .hero_frame .hero_frame_artist_card .banner_img {
+      max-width: 510px;
+      max-height: 401px; }
+    .hero_frame .hero_frame_artist_card .artist {
+      padding: 22px 20px; }
+      .hero_frame .hero_frame_artist_card .artist .collection_name {
+        display: block;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: capitalize;
+        margin-bottom: 10px; }
+        .hero_frame .hero_frame_artist_card .artist .collection_name:hover {
+          text-decoration: underline; }
+      .hero_frame .hero_frame_artist_card .artist .artist_username {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center; }
+        .hero_frame .hero_frame_artist_card .artist .artist_username:before {
+          background-image: url("../images/banner/avatar.svg");
+          display: inline-flex;
+          width: 24px;
+          height: 24px;
+          content: "";
+          margin-right: 12px; }
+        .hero_frame .hero_frame_artist_card .artist .artist_username:hover {
+          text-decoration: underline; }
+
+.card_collections {
+  padding: 80px 115px;
+  display: block; }
+  .card_collections h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    margin-bottom: 10px; }
+  .card_collections p {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-bottom: 60px; }
+  .card_collections .collection_card_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .card_collections .collection_card_row .collection_card {
+      max-width: 330px; }
+      .card_collections .collection_card_row .collection_card .primary_photo {
+        border-radius: 20px;
+        max-width: 330px;
+        max-height: 330px;
+        overflow: hidden;
+        margin-bottom: 15px; }
+        .card_collections .collection_card_row .collection_card .primary_photo img {
+          width: 100%; }
+        .card_collections .collection_card_row .collection_card .primary_photo:hover {
+          transform: scale(1.01);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+      .card_collections .collection_card_row .collection_card .secondary_photo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px; }
+        .card_collections .collection_card_row .collection_card .secondary_photo .photo {
+          border-radius: 20px;
+          width: 100px;
+          height: 100px;
+          overflow: hidden; }
+          .card_collections .collection_card_row .collection_card .secondary_photo .photo img {
+            width: 100%; }
+          .card_collections .collection_card_row .collection_card .secondary_photo .photo:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+        .card_collections .collection_card_row .collection_card .secondary_photo .number_of_NFTs {
+          border-radius: 20px;
+          padding: 32px 15px;
+          width: 100px;
+          height: 100px;
+          background-color: #A259FF;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "Space Mono", monospace;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 160%;
+          text-transform: capitalize; }
+          .card_collections .collection_card_row .collection_card .secondary_photo .number_of_NFTs:hover {
+            font-weight: 800;
+            background-color: #8d36f3;
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+      .card_collections .collection_card_row .collection_card .collection_info {
+        display: flex;
+        flex-direction: column; }
+        .card_collections .collection_card_row .collection_card .collection_info .collection_name {
+          font-family: "Work Sans", sans-serif;
+          font-weight: 600;
+          font-size: 22px;
+          line-height: 140%;
+          text-transform: capitalize;
+          margin-bottom: 10px; }
+        .card_collections .collection_card_row .collection_card .collection_info .artist_username {
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          display: flex;
+          align-items: center; }
+          .card_collections .collection_card_row .collection_card .collection_info .artist_username.card1:before {
+            background-image: url("../images/trending_collection/collection_1/avatar.svg");
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            content: "";
+            margin-right: 12px; }
+          .card_collections .collection_card_row .collection_card .collection_info .artist_username.card2:before {
+            background-image: url("../images/trending_collection/collection_2/avatar.svg");
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            content: "";
+            margin-right: 12px; }
+          .card_collections .collection_card_row .collection_card .collection_info .artist_username.card3:before {
+            background-image: url("../images/trending_collection/collection_3/avatar.svg");
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            content: "";
+            margin-right: 12px; }
+          .card_collections .collection_card_row .collection_card .collection_info .artist_username:hover {
+            text-decoration-line: underline; }
+
+.top_creators {
+  padding: 80px 115px;
+  display: block; }
+  .top_creators .headline_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px; }
+    .top_creators .headline_block .headline h3 {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 120%;
+      text-transform: capitalize;
+      margin-bottom: 10px; }
+    .top_creators .headline_block .headline p {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 160%;
+      text-transform: capitalize; }
+    .top_creators .headline_block .view_rankings_btn {
+      border-radius: 20px;
+      border: 2px solid #A259FF;
+      padding: 19px 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center; }
+      .top_creators .headline_block .view_rankings_btn:before {
+        background-image: url("../images/top_rated_artists/rocket.svg");
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        content: "";
+        margin-right: 12px; }
+      .top_creators .headline_block .view_rankings_btn:hover {
+        font-weight: 700;
+        background-color: #8d36f3;
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+        .top_creators .headline_block .view_rankings_btn:hover:before {
+          background-image: url("../images/top_rated_artists/rocket_hover.svg"); }
+  .top_creators .artist_card_grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .top_creators .artist_card_grid .artist_card_content {
+      border-radius: 20px;
+      padding: 20px;
+      width: 240px;
+      height: 240px;
+      background: #3B3B3B;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative; }
+      .top_creators .artist_card_grid .artist_card_content .card_number {
+        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+        background: #2B2B2B;
+        position: absolute;
+        top: 18px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .top_creators .artist_card_grid .artist_card_content .card_number span {
+          font-family: "Work Sans", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          text-align: center; }
+      .top_creators .artist_card_grid .artist_card_content .card_image img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px; }
+      .top_creators .artist_card_grid .artist_card_content .artist_username span {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 5px; }
+      .top_creators .artist_card_grid .artist_card_content .additional_info .total_sales {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: right;
+        color: #858584;
+        margin-bottom: 5px;
+        margin-right: 10px; }
+      .top_creators .artist_card_grid .artist_card_content .additional_info .total_sales_info {
+        font-family: "Space Mono", monospace;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%; }
+      .top_creators .artist_card_grid .artist_card_content:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        background: #484848; }
+        .top_creators .artist_card_grid .artist_card_content:hover .artist_username span {
+          text-decoration: underline; }
+    .top_creators .artist_card_grid .artist_card:nth-child(9) .artist_card_content,
+    .top_creators .artist_card_grid .artist_card:nth-child(10) .artist_card_content,
+    .top_creators .artist_card_grid .artist_card:nth-child(11) .artist_card_content,
+    .top_creators .artist_card_grid .artist_card:nth-child(12) .artist_card_content {
+      margin-bottom: 0; }
+
+.categories {
+  padding: 80px 115px;
+  display: block; }
+  .categories h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    margin-bottom: 60px; }
+  .categories .categories_cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .categories .categories_cards .category {
+      border-radius: 20px;
+      width: 240px;
+      height: 316px;
+      background: #3B3B3B;
+      overflow: hidden;
+      margin-bottom: 30px; }
+      .categories .categories_cards .category:nth-child(5), .categories .categories_cards .category:nth-child(6), .categories .categories_cards .category:nth-child(7), .categories .categories_cards .category:nth-child(8) {
+        margin-bottom: 0; }
+      .categories .categories_cards .category .photo_icon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .categories .categories_cards .category .photo_icon .category_photo {
+          width: 240px;
+          height: 240px;
+          filter: blur(5px); }
+        .categories .categories_cards .category .photo_icon .category_icon {
+          width: 100px;
+          height: 100px;
+          position: absolute; }
+      .categories .categories_cards .category .category_name {
+        margin: 20px 30px 25px;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: capitalize; }
+      .categories .categories_cards .category:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        background: #484848; }
+        .categories .categories_cards .category:hover .category_name span {
+          text-decoration: underline; }
+
+.discover_NFTs {
+  padding: 80px 115px;
+  display: block; }
+  .discover_NFTs .headline_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px; }
+    .discover_NFTs .headline_block .headline h3 {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 38px;
+      line-height: 120%;
+      text-transform: capitalize;
+      margin-bottom: 10px; }
+    .discover_NFTs .headline_block .headline span {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 160%;
+      text-transform: capitalize; }
+    .discover_NFTs .headline_block .see_all {
+      border-radius: 20px;
+      border: 2px solid #A259FF;
+      padding: 19px 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center; }
+      .discover_NFTs .headline_block .see_all:before {
+        background-image: url("../images/discover_nfts/icons/eye.svg");
+        width: 20px;
+        height: 20px;
+        display: inline-flex;
+        content: "";
+        margin-right: 12px; }
+      .discover_NFTs .headline_block .see_all:hover {
+        font-weight: 700;
+        background-color: #8d36f3;
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+        .discover_NFTs .headline_block .see_all:hover:before {
+          background-image: url("../images/discover_nfts/icons/eye_hover.svg"); }
+  .discover_NFTs .nft_cards_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .discover_NFTs .nft_cards_row .nft_card {
+      width: 330px;
+      min-height: 469px;
+      background: #3B3B3B;
+      border-radius: 20px;
+      overflow: hidden; }
+      .discover_NFTs .nft_cards_row .nft_card:hover {
+        transform: scale(1.01);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+    .discover_NFTs .nft_cards_row .nft_card_info {
+      padding: 20px 30px 25px; }
+      .discover_NFTs .nft_cards_row .nft_card_info .nft_card_name {
+        display: block;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: capitalize;
+        margin-bottom: 5px; }
+      .discover_NFTs .nft_cards_row .nft_card_info .artist_username {
+        font-family: "Space Mono", monospace;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        margin-bottom: 27px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center; }
+        .discover_NFTs .nft_cards_row .nft_card_info .artist_username:before {
+          width: 24px;
+          height: 24px;
+          margin-right: 12px;
+          display: inline-flex;
+          content: ""; }
+        .discover_NFTs .nft_cards_row .nft_card_info .artist_username:hover {
+          text-decoration: underline; }
+      .discover_NFTs .nft_cards_row .nft_card_info .moondancer:before {
+        background-image: url("../images/discover_nfts/icons/moonDancer.png"); }
+      .discover_NFTs .nft_cards_row .nft_card_info .nebulakid:before {
+        background-image: url("../images/discover_nfts/icons/nebulaKid.png"); }
+      .discover_NFTs .nft_cards_row .nft_card_info .spaceone:before {
+        background-image: url("../images/discover_nfts/icons/spaceone.png"); }
+      .discover_NFTs .nft_cards_row .nft_card_info .catch22:before {
+        background-image: url("../images/discover_nfts/icons/catch22.png"); }
+      .discover_NFTs .nft_cards_row .nft_card_info .puppypower:before {
+        background-image: url("../images/discover_nfts/icons/puppyPower.png"); }
+      .discover_NFTs .nft_cards_row .nft_card_info .bekind2robots:before {
+        background-image: url("../images/discover_nfts/icons/beKind2Robots.png"); }
+      .discover_NFTs .nft_cards_row .nft_card_info .nft_card_additional_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .discover_NFTs .nft_cards_row .nft_card_info .nft_card_additional_info .price .info_title,
+        .discover_NFTs .nft_cards_row .nft_card_info .nft_card_additional_info .highest_bid .info_title {
+          display: block;
+          font-family: "Space Mono", monospace;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 110%;
+          color: #858584;
+          margin-bottom: 8px; }
+        .discover_NFTs .nft_cards_row .nft_card_info .nft_card_additional_info .price .info,
+        .discover_NFTs .nft_cards_row .nft_card_info .nft_card_additional_info .highest_bid .info {
+          font-family: "Space Mono", monospace;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%; }
+  .discover_NFTs .owl-carousel .owl-nav .owl-prev {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/discover_nfts/icons/narrow_left.svg");
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -50px;
+    top: 220px; }
+  .discover_NFTs .owl-carousel .owl-nav .owl-next {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/discover_nfts/icons/narrow_right.svg");
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    right: -50px;
+    top: 220px; }
+  .discover_NFTs .owl-carousel .owl-item {
+    display: flex;
+    justify-content: center; }
+
+.nft_highlight {
+  background-image: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, #a259ff 100%), url("../images/nft_highlight/magic_mashrooms.jpg");
+  background-size: cover;
+  background-position: center; }
+  .nft_highlight .magic_mashrooms {
+    padding: 360px 115px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .nft_highlight .magic_mashrooms .nft_info .artist_username {
+      display: inline-flex;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      padding: 11px 20px;
+      background: #3B3B3B;
+      border-radius: 20px;
+      margin-bottom: 30px; }
+      .nft_highlight .magic_mashrooms .nft_info .artist_username:before {
+        background-image: url("../images/nft_highlight/avatar.png");
+        display: inline-flex;
+        width: 24px;
+        height: 24px;
+        content: "";
+        margin-right: 12px; }
+      .nft_highlight .magic_mashrooms .nft_info .artist_username:hover {
+        text-decoration: underline;
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+    .nft_highlight .magic_mashrooms .nft_info .nft_card_name {
+      display: block;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 51px;
+      line-height: 110%;
+      text-transform: capitalize;
+      margin-bottom: 30px; }
+    .nft_highlight .magic_mashrooms .nft_info .see_nft {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      color: #2B2B2B;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+      border-radius: 20px;
+      padding: 22px 50px;
+      background: #FFFFFF; }
+      .nft_highlight .magic_mashrooms .nft_info .see_nft:before {
+        background-image: url("../images/nft_highlight/eye.svg");
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+        content: "";
+        margin-right: 12px; }
+      .nft_highlight .magic_mashrooms .nft_info .see_nft:hover {
+        color: #ffffff;
+        background: #A259FF;
+        font-weight: 700;
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+        .nft_highlight .magic_mashrooms .nft_info .see_nft:hover:before {
+          background-image: url("../images/nft_highlight/eye_hover.svg"); }
+    .nft_highlight .magic_mashrooms .auction_timer {
+      border-radius: 20px;
+      padding: 30px;
+      background: rgba(59, 59, 59, 0.5);
+      display: flex;
+      flex-direction: column;
+      position: relative; }
+      .nft_highlight .magic_mashrooms .auction_timer p {
+        font-family: "Space Mono", monospace;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 110%;
+        text-align: left;
+        margin-bottom: 10px; }
+      .nft_highlight .magic_mashrooms .auction_timer .countdown_timer {
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 120%;
+        text-transform: capitalize;
+        margin-bottom: 5px; }
+        .nft_highlight .magic_mashrooms .auction_timer .countdown_timer .timer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between; }
+          .nft_highlight .magic_mashrooms .auction_timer .countdown_timer .timer .time_unit {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 38px; }
+            .nft_highlight .magic_mashrooms .auction_timer .countdown_timer .timer .time_unit:last-child {
+              margin-right: 0; }
+            .nft_highlight .magic_mashrooms .auction_timer .countdown_timer .timer .time_unit span {
+              font-family: "Space Mono", monospace;
+              font-weight: 700;
+              font-size: 38px;
+              line-height: 120%;
+              text-transform: capitalize; }
+            .nft_highlight .magic_mashrooms .auction_timer .countdown_timer .timer .time_unit p {
+              font-family: "Space Mono", monospace;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 110%;
+              text-align: center; }
+
+.how_get_started {
+  padding: 80px 115px;
+  display: block; }
+  .how_get_started h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    margin-bottom: 10px; }
+  .how_get_started p {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-bottom: 48px; }
+  .how_get_started .card_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .how_get_started .card_row .info_card {
+      border-radius: 20px;
+      padding: 10px 30px 30px 30px;
+      width: 330px;
+      height: 439px;
+      background: #3B3B3B; }
+      .how_get_started .card_row .info_card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+      .how_get_started .card_row .info_card .info_card_img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px; }
+      .how_get_started .card_row .info_card .card_headline {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 140%;
+        text-transform: capitalize;
+        text-align: center;
+        display: block;
+        margin-bottom: 10px; }
+        .how_get_started .card_row .info_card .card_headline:hover {
+          text-decoration: underline; }
+      .how_get_started .card_row .info_card .card_info {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        display: block; }
+
+.subscribe {
+  margin: 40px 115px 80px;
+  border-radius: 20px;
+  padding: 60px;
+  background: #3B3B3B;
+  max-width: 1050px;
+  max-height: 430px;
+  display: flex;
+  justify-content: space-between; }
+  .subscribe .subscribe_image {
+    border-radius: 20px;
+    width: 425px;
+    height: 310px;
+    overflow: hidden;
+    margin-right: 80px; }
+    .subscribe .subscribe_image img {
+      width: 100%;
+      border-radius: inherit; }
+  .subscribe .subscribe_info h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: capitalize;
+    margin-bottom: 10px; }
+  .subscribe .subscribe_info p {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-bottom: 40px; }
+  .subscribe .subscribe_info .subscribe_form {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 425px;
+    height: 60px; }
+    .subscribe .subscribe_info .subscribe_form #subscribe_email {
+      background: #FFFFFF;
+      border-color: transparent;
+      border-radius: 20px;
+      padding: 19px 20px;
+      width: 100%;
+      height: 100%;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #2B2B2B; }
+    .subscribe .subscribe_info .subscribe_form .subscribe_btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 0;
+      border-radius: 20px;
+      border-color: #A259FF;
+      padding: 20px 50px;
+      width: 211px;
+      height: 100%;
+      background: #A259FF;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      text-align: center;
+      cursor: pointer; }
+      .subscribe .subscribe_info .subscribe_form .subscribe_btn:before {
+        background-image: url("../images/subscribe_widget/envelope.svg");
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+        margin-right: 12px;
+        content: ""; }
+      .subscribe .subscribe_info .subscribe_form .subscribe_btn:hover {
+        background: #8d36f3; }
+
+.footer {
+  background: #3B3B3B; }
+  .footer .footer_info {
+    padding: 40px 146px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start; }
+    .footer .footer_info .community .logo img {
+      width: 243px;
+      height: 32px;
+      margin-bottom: 50px; }
+    .footer .footer_info .community p {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #ccc;
+      margin-bottom: 15px; }
+    .footer .footer_info .community .social_media {
+      width: 158px; }
+      .footer .footer_info .community .social_media ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .footer .footer_info .community .social_media ul li .discord:before {
+          background-image: url("../images/footer/discord.svg");
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+          content: ""; }
+        .footer .footer_info .community .social_media ul li .discord:hover:before {
+          background-image: url("../images/footer/discord_hover.svg"); }
+        .footer .footer_info .community .social_media ul li .youtube:before {
+          background-image: url("../images/footer/youtube.svg");
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+          content: ""; }
+        .footer .footer_info .community .social_media ul li .youtube:hover:before {
+          background-image: url("../images/footer/youtube_hover.svg"); }
+        .footer .footer_info .community .social_media ul li .twitter:before {
+          background-image: url("../images/footer/twitter.svg");
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+          content: ""; }
+        .footer .footer_info .community .social_media ul li .twitter:hover:before {
+          background-image: url("../images/footer/twitter_hover.svg"); }
+        .footer .footer_info .community .social_media ul li .instagram:before {
+          background-image: url("../images/footer/instagram.svg");
+          width: 32px;
+          height: 32px;
+          display: inline-block;
+          content: ""; }
+        .footer .footer_info .community .social_media ul li .instagram:hover:before {
+          background-image: url("../images/footer/instagram_hover.svg"); }
+    .footer .footer_info .explore .title {
+      display: block;
+      font-family: "Space Mono", monospace;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 160%;
+      text-transform: capitalize;
+      margin-bottom: 25px; }
+      .footer .footer_info .explore .title:hover {
+        text-decoration: underline; }
+    .footer .footer_info .explore .explore_nav li:last-child a {
+      margin-bottom: 0; }
+    .footer .footer_info .explore .explore_nav li a {
+      display: block;
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #ccc;
+      margin-bottom: 20px; }
+      .footer .footer_info .explore .explore_nav li a:hover {
+        text-decoration: underline; }
+    .footer .footer_info .joining .title {
+      display: block;
+      font-family: "Space Mono", monospace;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 160%;
+      text-transform: capitalize;
+      margin-bottom: 25px; }
+    .footer .footer_info .joining p {
+      font-family: "Work Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #ccc;
+      margin-bottom: 20px; }
+    .footer .footer_info .subscribe_form {
+      display: flex;
+      position: relative;
+      align-items: center;
+      width: 425px;
+      height: 60px;
+      margin-bottom: 37px; }
+      .footer .footer_info .subscribe_form #subscribe_email_footer {
+        background: #FFFFFF;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 19px 20px;
+        width: 100%;
+        height: 100%;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #2B2B2B; }
+      .footer .footer_info .subscribe_form .subscribe_btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        border-radius: 20px;
+        border-color: #A259FF;
+        padding: 20px 50px;
+        width: 211px;
+        height: 100%;
+        background: #A259FF;
+        font-family: "Work Sans", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        cursor: pointer; }
+        .footer .footer_info .subscribe_form .subscribe_btn:hover {
+          background: #8d36f3; }
+  .footer .line {
+    border: 1px solid #858584;
+    width: 1049px;
+    height: 0;
+    margin: 0 auto 20px; }
+  .footer .copyright_notice {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #ccc;
+    margin-left: 115px;
+    padding-bottom: 40px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAW;EACT,OAAO,EAAE,UAAU;EACnB,OAAO,EAAE,KAAK",
+"sources": ["browse_categories.scss"],
+"names": [],
+"file": "browse_categories.css"
+}

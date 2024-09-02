@@ -1,0 +1,194 @@
+.footer{
+  background: $background_secondary;
+  .footer_info{
+    padding: 40px 146px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    .community{
+      .logo{
+        img{
+          width: 243px;
+          height: 32px;
+          margin-bottom: 50px;
+        }
+      }
+      p{
+        font-family: $work_sans_font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #ccc;
+        margin-bottom: 15px;
+      }
+      .social_media{
+        width: 158px;
+        ul{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          li{
+            .discord{
+              &:before{
+                background-image: url("../images/footer/discord.svg");
+                width: 32px;
+                height: 32px;
+                display: inline-block;
+                content: "";
+              }
+              &:hover:before{
+                background-image: url("../images/footer/discord_hover.svg");
+              }
+            }
+            .youtube{
+              &:before{
+                background-image: url("../images/footer/youtube.svg");
+                width: 32px;
+                height: 32px;
+                display: inline-block;
+                content: "";
+              }
+              &:hover:before{
+                background-image: url("../images/footer/youtube_hover.svg");
+              }
+            }
+            .twitter{
+              &:before{
+                background-image: url("../images/footer/twitter.svg");
+                width: 32px;
+                height: 32px;
+                display: inline-block;
+                content: "";
+              }
+              &:hover:before{
+                background-image: url("../images/footer/twitter_hover.svg");
+              }
+            }
+            .instagram{
+              &:before{
+                background-image: url("../images/footer/instagram.svg");
+                width: 32px;
+                height: 32px;
+                display: inline-block;
+                content: "";
+              }
+              &:hover:before{
+                background-image: url("../images/footer/instagram_hover.svg");
+              }
+            }
+          }
+        }
+      }
+    }
+    .explore{
+      .title{
+        display: block;
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 160%;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+      .explore_nav{
+        li{
+          &:last-child a{
+            margin-bottom: 0;
+          }
+          a{
+            display: block;
+            font-family: $work_sans_font;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            color: #ccc;
+            margin-bottom: 20px;
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+    .joining{
+      .title{
+        display: block;
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 160%;
+        text-transform: capitalize;
+        margin-bottom: 25px;
+      }
+      p{
+        font-family: $work_sans_font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #ccc;
+        margin-bottom: 20px;
+      }
+    }
+    .subscribe_form{
+      display: flex;
+      position: relative;
+      align-items: center;
+      width: 425px;
+      height: 60px;
+      margin-bottom: 37px;
+      #subscribe_email_footer{
+        background: #FFFFFF;
+        border-color: transparent;
+        border-radius: 20px;
+        padding: 19px 20px;
+        width: 100%;
+        height: 100%;
+        font-family: $work_sans_font;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: $background_color;
+      }
+      .subscribe_btn{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        border-radius: 20px;
+        border-color: $main_color;
+        padding: 20px 50px;
+        width: 211px;
+        height: 100%;
+        background: $main_color;
+        font-family: $work_sans_font;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+          background: $btn_hover;
+        }
+      }
+    }
+  }
+  .line{
+    border: 1px solid $caption_label_text;
+    width: 1049px;
+    height: 0;
+    margin: 0 auto 20px;
+  }
+  .copyright_notice{
+    font-family: $work_sans_font;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #ccc;
+    margin-left: 115px;
+    padding-bottom: 40px;
+  }
+}

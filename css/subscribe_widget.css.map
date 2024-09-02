@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAU;EACR,MAAM,EAAE,eAAe;EACvB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,OAAO;EACnB,SAAS,EAAE,MAAM;EACjB,UAAU,EAAE,KAAK",
+"sources": ["subscribe_widget.scss"],
+"names": [],
+"file": "subscribe_widget.css"
+}
